@@ -20,7 +20,7 @@ export default function Page() {
               phone="+91 9353830857"
               linkedinUrl="https://www.linkedin.com/in/sandhyavathi/"
               githubUrl="https://github.com/Sandhyavathi"
-              resumeUrl="/Sandhyavathi_G_Resume.pdf"
+              resumeUrl="https://drive.google.com/file/d/1HVBaUjGxnbEGaTF9HST3MQp6iAaNTsUo/view?usp=sharing"
               scrollToId="education"
               className="bg-[color:var(--earth-card,#F3EFE7)]"
             />
@@ -43,7 +43,7 @@ export default function Page() {
 
             <section id="certifications" className="scroll-mt-24">
               <CertificationsFooter
-                resumeUrl="/Sandhyavathi_G_Resume.pdf"
+                resumeUrl="https://drive.google.com/file/d/1HVBaUjGxnbEGaTF9HST3MQp6iAaNTsUo/view?usp=sharing"
                 className="mt-2"
               />
             </section>
