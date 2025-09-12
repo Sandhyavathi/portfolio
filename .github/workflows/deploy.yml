@@ -21,10 +21,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       
-      - name: Setup Node
+      - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '18'
+          node-version: '20'
           cache: 'npm'
       
       - name: Setup Pages
@@ -32,8 +32,10 @@ jobs:
         with:
           static_site_generator: next
       
-      - name: Install dependencies
-        run: npm ci --legacy-peer-deps
+      - name: Delete lock file and install fresh
+        run: |
+          rm -f package-lock.json
+          npm install --legacy-peer-deps
       
       - name: Build with Next.js
         run: npm run build
