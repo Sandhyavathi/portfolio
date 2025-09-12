@@ -20,7 +20,6 @@ export type CertificationsFooterProps = {
   showClosingStatement?: boolean
   resumeUrl?: string
   email?: string
-  phone?: string
 }
 
 export function cn(...classes: Array<string | undefined | false | null>) {
@@ -155,7 +154,7 @@ export default function CertificationsFooter({
             <div className="min-w-0">
               <p className="text-sm font-medium text-foreground">Get in touch</p>
               <p className="text-sm text-muted-foreground break-words">
-                {email} • {phone}
+                {email}
               </p>
             </div>
 
