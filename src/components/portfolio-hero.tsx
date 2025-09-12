@@ -23,7 +23,7 @@ export interface PortfolioHeroProps {
 }
 
 const DEFAULT_PHOTO =
-  "https://images.unsplash.com/photo-1527980965255-d3b416303d12?q=80&w=1200&auto=format&fit=crop"
+  "https://drive.google.com/file/d/1mV1fouQMefX4oZUtsr8-PTTlwgu2zXX3/view?usp=sharing"
 
 export default function PortfolioHero({
   className,
