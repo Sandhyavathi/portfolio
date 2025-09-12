@@ -14,10 +14,9 @@ export default function Page() {
             <PortfolioHero
               name="Sandhyavathi G"
               title="AI Engineer"
-              summary="AAI Engineer with expertise in building production-ready AI systems, conversational agents, and intelligent automation workflows. Proficient in LLMs, voice AI, and real-time processing with hands-on experience in FastAPI, cloud deployment, and microservices architecture. Experienced in developing end-to-end AI solutions from concept to production, with strong background in data science and cloud platforms including AWS and Azure."
+              summary="AI Engineer with expertise in building production-ready AI systems, conversational agents, and intelligent automation workflows. Proficient in LLMs, voice AI, and real-time processing with hands-on experience in FastAPI, cloud deployment, and microservices architecture. Experienced in developing end-to-end AI solutions from concept to production, with strong background in data science and cloud platforms including AWS and Azure."
               photoUrl="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/document-uploads/1757678464690-lagtcc8ipd.png"
-              email="sandhyavathi.g@gmail.com"
-              phone="+91 9353830857"
+              email="sandhyavathi.g890@gmail.com"
               linkedinUrl="https://www.linkedin.com/in/sandhyavathi/"
               githubUrl="https://github.com/Sandhyavathi"
               resumeUrl="https://drive.google.com/file/d/1HVBaUjGxnbEGaTF9HST3MQp6iAaNTsUo/view?usp=sharing"
