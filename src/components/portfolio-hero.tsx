@@ -1,7 +1,7 @@
 "use client"
 
 import React, { useEffect, useMemo, useRef, useState } from "react"
-import { Github, Linkedin, Phone, Contact, Pointer } from "lucide-react"
+import { Github, Linkedin, Contact, Pointer } from "lucide-react"
 import { toast } from "sonner"
 import Image from "next/image"
 import Link from "next/link"
@@ -14,7 +14,6 @@ export interface PortfolioHeroProps {
   summary?: string
   photoUrl?: string
   email?: string
-  phone?: string
   linkedinUrl?: string
   githubUrl?: string
   resumeUrl?: string
@@ -32,7 +31,6 @@ export default function PortfolioHero({
   summary = "AI engineer specializing in building robust ML systems, LLM applications, and production-grade MLOps pipelines with a focus on reliability, performance, and elegant user experiences.",
   photoUrl = DEFAULT_PHOTO,
   email,
-  phone,
   linkedinUrl,
   githubUrl,
   resumeUrl,
@@ -95,7 +93,6 @@ export default function PortfolioHero({
 
   // Accessibility labels
   const emailLabel = email ? `Email ${email}` : "Email not provided"
-  const phoneLabel = phone ? `Call ${phone}` : "Phone not provided"
   const linkedinLabel = linkedinUrl ? "Open LinkedIn profile" : "LinkedIn not provided"
   const githubLabel = githubUrl ? "Open GitHub profile" : "GitHub not provided"
 
@@ -171,12 +168,6 @@ export default function PortfolioHero({
                 label={email || "Email"}
                 href={email ? `mailto:${email}` : undefined}
                 ariaLabel={emailLabel}
-              />
-              <ContactItem
-                icon={<Phone className="h-4 w-4" aria-hidden="true" />}
-                label={phone || "Phone"}
-                href={phone ? `tel:${phone.replace(/\s+/g, "")}` : undefined}
-                ariaLabel={phoneLabel}
               />
               <ContactItem
                 icon={<Linkedin className="h-4 w-4" aria-hidden="true" />}
