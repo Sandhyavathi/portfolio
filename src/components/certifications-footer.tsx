@@ -73,7 +73,7 @@ export default function CertificationsFooter({
   certifications = DEFAULT_CERTIFICATIONS,
   showClosingStatement = true,
   resumeUrl,
-  email = "mailto:sandhyavathi.g@gmail.com"
+  email = "mailto:sandhyavathi.g890@gmail.com"
 }: CertificationsFooterProps) {
   const onDownloadResume = React.useCallback(() => {
     if (resumeUrl) {
@@ -160,7 +160,7 @@ export default function CertificationsFooter({
 
             <div className="flex items-center gap-2 sm:gap-3">
               <a
-                href="https://www.linkedin.com/"
+                href="https://www.linkedin.com/in/sandhyavathi/"
                 target="_blank"
                 rel="noreferrer noopener"
                 aria-label="LinkedIn"
@@ -173,7 +173,7 @@ export default function CertificationsFooter({
                 <Linkedin className="h-5 w-5" />
               </a>
               <a
-                href="https://github.com/"
+                href="https://github.com/Sandhyavathi"
                 target="_blank"
                 rel="noreferrer noopener"
                 aria-label="GitHub"
@@ -220,7 +220,7 @@ export default function CertificationsFooter({
           {showClosingStatement && (
             <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
               <p className="text-sm text-muted-foreground">
-                Thank you for visiting. Crafted with care in warm, earth tones to keep things simple and focused.
+                Thank you for visiting.
               </p>
               <p className="text-xs text-muted-foreground">
                 © {new Date().getFullYear()} Sandhyavathi G • All rights reserved
