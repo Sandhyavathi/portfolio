@@ -23,7 +23,7 @@ export interface PortfolioHeroProps {
 }
 
 const DEFAULT_PHOTO =
-  "https://drive.google.com/file/d/1mV1fouQMefX4oZUtsr8-PTTlwgu2zXX3/view?usp=sharing"
+  "https://drive.google.com/file/d/1lXlwYTXUiwCNj-3wV11HrLQ4imRJU5ZP/view?usp=sharing"
 
 export default function PortfolioHero({
   className,
