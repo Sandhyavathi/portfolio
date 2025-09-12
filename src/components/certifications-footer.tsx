@@ -74,8 +74,7 @@ export default function CertificationsFooter({
   certifications = DEFAULT_CERTIFICATIONS,
   showClosingStatement = true,
   resumeUrl,
-  email = "mailto:sandhyavathi.g@example.com",
-  phone = "+91 ••••• •••••",
+  email = "mailto:sandhyavathi.g@gmail.com"
 }: CertificationsFooterProps) {
   const onDownloadResume = React.useCallback(() => {
     if (resumeUrl) {
