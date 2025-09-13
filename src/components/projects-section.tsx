@@ -25,10 +25,10 @@ const DEFAULT_PROJECTS: Project[] = [
     title: "AI Voice Agent",
     subtitle: "Real-time conversational AI",
     description:
-      "Production-ready voice agent enabling natural, latency-aware dialog with intent routing and memory.",
+      "Built real-time conversational AI using LiveKit and OpenAI APIs with WebRTC for low-latency audio streaming.",
     details:
-      "Streaming STT/TTS, function calling for task execution, and contextual memory for multi-turn conversations.",
-    tech: ["WebRTC", "VAD", "Whisper", "Coqui TTS", "OpenAI Realtime", "FastAPI"],
+      "Implemented Speech-to-Text → LLM → Text-to-Speech pipeline with voice activity detection and interruption handling. Optimized for sub-200ms response times and deployed on cloud infrastructure for concurrent users. ",
+    tech: ["WebRTC", "VAD", "Whisper", "LiveKit", "OpenAI Realtime", "AI Agent", "Voice Agent"],
     image:
       "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=1600&q=60",
     imageAlt: "Headphones and microphone representing voice technology",
@@ -37,12 +37,12 @@ const DEFAULT_PROJECTS: Project[] = [
   },
   {
     title: "Lead Generation API",
-    subtitle: "Enrichment + scoring pipeline",
+    subtitle: "",
     description:
-      "High-throughput enrichment API that scores leads with probabilistic models and deduplication.",
+      "Developed FastAPI backend system using Search API for automated B2B lead discovery and company intelligence. Built async processing pipeline with SQLite database, automated company data extraction, and CSV/JSON export functionality. Implemented company information parsing with confidence scoring and location/industry detection algorithms.  ",
     details:
       "Features smart rate-limiting, multi-provider fallbacks, and batched scoring for cost-optimal throughput.",
-    tech: ["Python", "FastAPI", "Redis", "PostgreSQL", "XGBoost", "Docker"],
+    tech: ["LLM", "API Automation", "MySQL"],
     image:
       "https://images.unsplash.com/photo-1518779578993-ec3579fee39f?auto=format&fit=crop&w=1600&q=60",
     imageAlt: "Code on screen with terminal and editor",
@@ -53,10 +53,9 @@ const DEFAULT_PROJECTS: Project[] = [
     title: "YouTube Script Assistant",
     subtitle: "Research → outline → script",
     description:
-      "Assistant that researches a topic, drafts structured outlines, and generates voice-ready scripts.",
-    details:
-      "Retrieval-augmented generation with citation tracing, tone controls, and length constraints.",
-    tech: ["Next.js", "TypeScript", "RAG", "Pinecone", "OpenAI", "shadcn/ui"],
+      "AI-based tool to generate YouTube scripts using Cohere API, FastAPI for backend, and Streamlit for a user-friendly interface. ",
+    details:"",
+    tech: ["Streamlit", "Cohere API", "LLM", "Prompt Engineering", "FastAPI"],
     image:
       "https://images.unsplash.com/photo-1517059224940-d4af9eec41e5?auto=format&fit=crop&w=1600&q=60",
     imageAlt: "Creative workstation with camera and laptop",
@@ -67,10 +66,10 @@ const DEFAULT_PROJECTS: Project[] = [
     title: "E‑Commerce Analysis",
     subtitle: "Behavior + cohort analytics",
     description:
-      "Analysis suite revealing funnels, cohorts, and LTV with anomaly alerts for merchandising teams.",
+      "Analyzed sales trends, product performance, and customer segmentation using Python. Performed data cleaning, transformation, and visualization with Pandas and Matplotlib. ",
     details:
       "Warehouse-native modeling, BI-ready metrics, and automated weekly insights with deltas.",
-    tech: ["dbt", "BigQuery", "Looker", "Python", "Airflow"],
+    tech: ["Pandas", "Python", "Matplotlib", "Data Analysis"],
     image:
       "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=1600&q=60",
     imageAlt: "Analytics dashboard on display with charts",
@@ -81,10 +80,9 @@ const DEFAULT_PROJECTS: Project[] = [
     title: "Sales Forecasting",
     subtitle: "Time-series forecasting",
     description:
-      "Robust forecasting for SKU-level demand with hierarchical reconciliation and seasonality controls.",
-    details:
-      "Combines feature-engineered regressors, cross-store pooling, and backtesting for reliability.",
-    tech: ["Prophet", "LightGBM", "Darts", "Pandas", "MLflow"],
+      "Used ARIMA for time series analysis and forecasted sales trends to aid business decisions on inventory and marketing strategies.",
+    details:"",
+    tech: ["ARIMA", "Time series analysis"],
     image:
       "https://images.unsplash.com/photo-1556157382-97eda2d62296?auto=format&fit=crop&w=1600&q=60",
     imageAlt: "Close-up of graphs and data visualizations",
