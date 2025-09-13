@@ -15,7 +15,7 @@ export default function Page() {
               name="Sandhyavathi G"
               title="AI Engineer"
               summary="AI Engineer with expertise in building production-ready AI systems, conversational agents, and intelligent automation workflows. Proficient in LLMs, voice AI, and real-time processing with hands-on experience in FastAPI, cloud deployment, and microservices architecture. Experienced in developing end-to-end AI solutions from concept to production, with strong background in data science and cloud platforms including AWS and Azure."
-              photoUrl="https://github.com/Sandhyavathi/portfolio/blob/main/src/app/Generated%20Image%20September%2013%2C%202025%20-%202_46PM.png"
+              photoUrl="https://raw.githubusercontent.com/Sandhyavathi/portfolio/main/src/app/Generated%20Image%20September%2013%2C%202025%20-%202_46PM.png"
               email="sandhyavathi.g890@gmail.com"
               linkedinUrl="https://www.linkedin.com/in/sandhyavathi/"
               githubUrl="https://github.com/Sandhyavathi"
