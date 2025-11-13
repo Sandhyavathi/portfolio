@@ -48,17 +48,6 @@ const DEFAULT_ITEMS: ExperienceItem[] = [
     logoLabel: "VM",
   },
   {
-    company: "Value Point Systems",
-    title: "Cloud Associate",
-    period: "Jan 2023 — Jul 2023",
-    achievements: [
-      "Implemented IaC modules (Terraform) to standardize VPC and IAM baselines",
-      "Led infrastructure setup and managed seamless mail migrations for clients.",
-      "Implemented hybrid cloud setups and VDI solutions, improving scalability",
-    ],
-    logoLabel: "VP",
-  },
-  {
     company: "Cloud Enabled",
     title: "Cloud DevOps Intern",
     period: "Jun 2022 — Dec 2022",
