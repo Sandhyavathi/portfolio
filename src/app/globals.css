@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,300..900;1,14..32,300..900&display=swap");
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+  /* ── SpaceMarvel-inspired palette: near-black + white + subtle blue ── */
+  --color-background: #08080d;
+  --color-foreground: #f2f2f8;
+  --color-card: #0e0e16;
+  --color-card-foreground: #f2f2f8;
+  --color-popover: #0e0e16;
+  --color-popover-foreground: #f2f2f8;
+
+  /* Primary = white (like SpaceMarvel's white CTA buttons) */
+  --color-primary: #f2f2f8;
+  --color-primary-foreground: #08080d;
+
+  /* Secondary surface = slightly lighter dark */
+  --color-secondary: #121220;
+  --color-secondary-foreground: #8888a8;
+
+  --color-muted: #141428;
+  --color-muted-foreground: #606080;
+
+  /* Accent = very subtle blue (used sparingly) */
+  --color-accent: #5a8fff;
+  --color-accent-foreground: #ffffff;
+
+  --color-destructive: #ef4444;
+  --color-destructive-foreground: #ffffff;
+
+  --color-border: rgba(255,255,255,0.06);
+  --color-input: rgba(255,255,255,0.08);
+  --color-ring: rgba(255,255,255,0.3);
+
+  /* Chart tokens — soft blues/whites for progress bars etc. */
+  --color-chart-1: #7a9fff;   /* soft periwinkle blue */
+  --color-chart-2: #a0c4ff;   /* lighter blue */
+  --color-chart-3: #60d4a8;   /* subtle teal-green */
+  --color-chart-4: rgba(100,130,255,0.12);
+  --color-chart-5: #ffd180;   /* warm amber for awards */
+
+  /* Sidebar (kept for compat) */
+  --color-sidebar: #0a0a12;
+  --color-sidebar-foreground: #f2f2f8;
+  --color-sidebar-primary: #f2f2f8;
+  --color-sidebar-primary-foreground: #08080d;
+  --color-sidebar-accent: #121220;
+  --color-sidebar-accent-foreground: #f2f2f8;
+  --color-sidebar-border: rgba(255,255,255,0.05);
+  --color-sidebar-ring: rgba(255,255,255,0.2);
+
+  /* Radius */
+  --radius-lg: 0.875rem;
+  --radius-md: calc(0.875rem - 2px);
+  --radius-sm: calc(0.875rem - 4px);
+
+  /* Accordion */
+  --animate-accordion-down: accordion-down 0.2s ease-out;
+  @keyframes accordion-down {
+    from { height: 0; }
+    to   { height: var(--radix-accordion-content-height); }
+  }
+  --animate-accordion-up: accordion-up 0.2s ease-out;
+  @keyframes accordion-up {
+    from { height: var(--radix-accordion-content-height); }
+    to   { height: 0; }
+  }
+
+  /* Extra tokens */
+  --color-hero:    #c0c8ff;
+  --color-success: #60d4a8;
+  --color-warning: #ffd180;
+
+  --font-sans:    "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-heading: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* ── Tailwind v4 border compat ───────────────────────────────────────────── */
+@layer base {
+  *,::after,::before,::backdrop,::file-selector-button {
+    border-color: var(--color-border);
+  }
+}
+
+/* ── CSS variable bridge ─────────────────────────────────────────────────── */
+@layer base {
+  :root {
+    --background:             var(--color-background);
+    --foreground:             var(--color-foreground);
+    --card:                   var(--color-card);
+    --card-foreground:        var(--color-card-foreground);
+    --popover:                var(--color-popover);
+    --popover-foreground:     var(--color-popover-foreground);
+    --primary:                var(--color-primary);
+    --primary-foreground:     var(--color-primary-foreground);
+    --secondary:              var(--color-secondary);
+    --secondary-foreground:   var(--color-secondary-foreground);
+    --muted:                  var(--color-muted);
+    --muted-foreground:       var(--color-muted-foreground);
+    --accent:                 var(--color-accent);
+    --accent-foreground:      var(--color-accent-foreground);
+    --destructive:            var(--color-destructive);
+    --destructive-foreground: var(--color-destructive-foreground);
+    --border:                 var(--color-border);
+    --input:                  var(--color-input);
+    --ring:                   var(--color-ring);
+    --chart-1:                var(--color-chart-1);
+    --chart-2:                var(--color-chart-2);
+    --chart-3:                var(--color-chart-3);
+    --chart-4:                var(--color-chart-4);
+    --chart-5:                var(--color-chart-5);
+    --radius:                 var(--radius-lg);
+    --sidebar-background:     var(--color-sidebar);
+    --sidebar-foreground:     var(--color-sidebar-foreground);
+    --sidebar-primary:        var(--color-sidebar-primary);
+    --sidebar-primary-foreground: var(--color-sidebar-primary-foreground);
+    --sidebar-accent:         var(--color-sidebar-accent);
+    --sidebar-accent-foreground: var(--color-sidebar-accent-foreground);
+    --sidebar-border:         var(--color-sidebar-border);
+    --sidebar-ring:           var(--color-sidebar-ring);
+    --hero:                   var(--color-hero);
+    --success:                var(--color-success);
+    --warning:                var(--color-warning);
+  }
+}
+
+/* ── Base ────────────────────────────────────────────────────────────────── */
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    scroll-behavior: smooth;
+  }
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+  }
+  h1,h2,h3,h4 {
+    font-family: var(--font-heading);
+    color: var(--color-foreground);
+  }
+  h1 { font-weight: 800; letter-spacing: -0.03em; }
+  h2 { font-weight: 700; letter-spacing: -0.02em; }
+  h3 { font-weight: 600; letter-spacing: -0.01em; }
+  a  { color: var(--color-foreground); text-decoration: none; }
+  ::selection { background: rgba(122,159,255,0.25); color: #fff; }
+}
+
+/* ── Utilities ───────────────────────────────────────────────────────────── */
+@layer utilities {
+  .font-sans    { font-family: var(--font-sans); }
+  .font-heading { font-family: var(--font-heading); }
+
+  /* Gradient text: white → soft blue (subtle, not loud) */
+  .gradient-text {
+    background: linear-gradient(135deg, #ffffff 0%, #a0b8ff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Section label pill — muted white, no color */
+  .section-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.375rem;
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    background: rgba(255,255,255,0.05);
+    color: rgba(255,255,255,0.45);
+    border: 1px solid rgba(255,255,255,0.08);
+  }
+
+  /* Card hover glow — very subtle white */
+  .card-glow {
+    transition: box-shadow 0.35s ease, border-color 0.35s ease;
+  }
+  .card-glow:hover {
+    box-shadow: 0 0 0 1px rgba(255,255,255,0.1), 0 8px 32px rgba(0,0,0,0.4);
+    border-color: rgba(255,255,255,0.12);
+  }
+
+  /* Gradient border on hover (white to blue) */
+  .gradient-border {
+    position: relative;
+    background: var(--color-card);
+    border-radius: var(--radius);
+  }
+  .gradient-border::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 1px;
+    background: linear-gradient(135deg, rgba(255,255,255,0.15), rgba(122,159,255,0.3));
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    opacity: 0;
+    transition: opacity 0.35s ease;
+    pointer-events: none;
+  }
+  .gradient-border:hover::before { opacity: 1; }
+
+  /* Photo spin ring */
+  @keyframes ring-spin {
+    from { transform: rotate(0deg); }
+    to   { transform: rotate(360deg); }
+  }
+  .ring-spin { animation: ring-spin 10s linear infinite; }
+}
+
+/* ── Scrollbar ───────────────────────────────────────────────────────────── */
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: var(--color-background); }
+::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.1); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: rgba(255,255,255,0.2); }
+
+/* ── Hide Next.js error overlay ─────────────────────────────────────────── */
+nextjs-portal { display: none !important; }
