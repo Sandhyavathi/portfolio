@@ -203,7 +203,7 @@ export default function Page() {
           email="sandhyavathi.g890@gmail.com"
           linkedinUrl="https://www.linkedin.com/in/sandhyavathi/"
           githubUrl="https://github.com/Sandhyavathi"
-          resumeUrl="https://drive.google.com/file/d/13u9ADoRAheKc1rcUk2RoJkYlPBG6bIKc/view?usp=sharing"
+          resumeUrl="https://drive.google.com/file/d/1qqBmm5spBxKzCiD8GUG-ob89fCtNmjA9/view?usp=sharing"
           scrollToId="education"
         />
       </div>
