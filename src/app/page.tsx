@@ -254,7 +254,7 @@ export default function Page() {
 
           <section id="certifications" className="scroll-mt-24">
             <CertificationsFooter
-              resumeUrl="https://drive.google.com/file/d/1HVBaUjGxnbEGaTF9HST3MQp6iAaNTsUo/view?usp=sharing"
+              resumeUrl="https://drive.google.com/file/d/1qqBmm5spBxKzCiD8GUG-ob89fCtNmjA9/view?usp=sharing"
             />
           </section>
         </div>
