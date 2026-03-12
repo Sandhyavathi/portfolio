@@ -642,7 +642,7 @@ export default function DocumentIntelligencePage() {
                 className="w-full"
                 style={{ display: "block", maxHeight: "520px", background: "#09090e" }}
               >
-                <source src="/videos/demo.mp4" type="video/mp4" />
+                <source src="/portfolio/videos/demo.mp4" type="video/mp4" />
                 Your browser does not support HTML5 video.
               </video>
             </div>
