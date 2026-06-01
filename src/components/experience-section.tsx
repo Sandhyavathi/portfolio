@@ -20,7 +20,7 @@ const EXPERIENCES: Experience[] = [
   {
     company: "Space Marvel AI",
     title: "AI Engineer",
-    period: "Apr 2025 – Feb 2026",
+    period: "Apr 2025 – Present",
     type: "full-time",
     accent: "from-white/60 to-blue-300/50",
     achievements: [
