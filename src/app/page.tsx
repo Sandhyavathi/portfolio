@@ -8,7 +8,7 @@ import ExperienceSection from "@/components/experience-section"
 import ProjectsSection from "@/components/projects-section"
 import CertificationsFooter from "@/components/certifications-footer"
 
-// ── Stats strip ───────────────────────────────────────────────────────────
+// ── Stats strip ──────────────────────────────────────────────────────────[...]
 
 const STATS = [
   { value: "3+", label: "Production AI systems" },
@@ -130,7 +130,7 @@ function ImageMoment({
   )
 }
 
-// ── Sticky nav ────────────────────────────────────────────────────────────
+// ── Sticky nav ──────────────────────────────────────────────────────────[...]
 
 const NAV_ITEMS = [
   { id: "education",       label: "Education" },
@@ -188,7 +188,7 @@ function StickyNav() {
   )
 }
 
-// ── Page ──────────────────────────────────────────────────────────────────
+// ── Page ────────────────────────────────────────────────────────────[...]
 
 export default function Page() {
   return (
@@ -203,7 +203,7 @@ export default function Page() {
           email="sandhyavathi.g890@gmail.com"
           linkedinUrl="https://www.linkedin.com/in/sandhyavathi/"
           githubUrl="https://github.com/Sandhyavathi"
-          resumeUrl="https://drive.google.com/file/d/1qqBmm5spBxKzCiD8GUG-ob89fCtNmjA9/view?usp=sharing"
+          resumeUrl="https://drive.google.com/file/d/1JEjxRjDuRMCL-XKK7a-0kE2cBVenSldy/view?usp=sharing"
           scrollToId="education"
         />
       </div>
@@ -254,7 +254,7 @@ export default function Page() {
 
           <section id="certifications" className="scroll-mt-24">
             <CertificationsFooter
-              resumeUrl="https://drive.google.com/file/d/1qqBmm5spBxKzCiD8GUG-ob89fCtNmjA9/view?usp=sharing"
+              resumeUrl="https://drive.google.com/file/d/1JEjxRjDuRMCL-XKK7a-0kE2cBVenSldy/view?usp=sharing"
             />
           </section>
         </div>
